@@ -18,15 +18,14 @@
 
 <body>
 
-
-
     <div class="container">
+
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="../assets/1.png" alt="" width="72" height="57">
+            <h2>REGISTRO</h2>
+            <p class="lead">Si te gustaría disfrutar de todas las ventajas de MapTrip, regístrate aquí.</p>
+        </div>
         <div class="row g-3">
-            <div class="py-5 text-center">
-                <img class="d-block mx-auto mb-4" src="../assets/1.png" alt="" width="72" height="57">
-                <h2>REGISTRO</h2>
-                <p class="lead">Si te gustaría disfrutar de todas las ventajas de MapTrip, regístrate aquí.</p>
-            </div>
             <div class="col-sm-6">
                 <label for="firstName" class="form-label">Nombre<span class="text-body-secondary">*</span></label>
                 <input type="text" class="form-control" id="nombre" placeholder="Patricia" value="" required>
@@ -42,87 +41,113 @@
                     Introduce un apellido válido.
                 </div>
             </div>
-            <div class="col-12">
+        </div>
+
+        <div class="row g-3 mt-3">
+            <div class="col-sm-6">
                 <label for="email" class="form-label">Email <span class="text-body-secondary">*</span></label>
                 <input type="email" class="form-control" id="email" placeholder="mi@correo.com">
                 <div class="invalid-feedback">
                     Introduce un email válido.
                 </div>
             </div>
-            <div class="col-12">
+            <div class=" col-sm-3">
                 <label for="password" class="form-label">Contraseña <span class="text-body-secondary">*</span></label>
                 <input type="password" class="form-control" id="password" placeholder="********">
                 <div class="invalid-feedback">
                     Introduce una contraseña válida.
                 </div>
-
-                <div class="col-md-5">
-                    <label for="country" class="form-label">Ciudad</label>
-                    <select class="form-select" id="country" required>
-                        <option value="">Selecciona una ciudad</option>
-                        <option>Ciudad Real</option>
-                        <option>Madrid</option>
-                        <option>Barcelona</option>
-                        <option>Valencia</option>
-                        <option>Sevilla</option>
-                        <option>Zaragoza</option>
-                        <option>Málaga</option>
-                        <option>Murcia</option>
-                        <option>Palma de Mallorca</option>
-                        <option>Las Palmas de Gran Canaria</option>
-                        <option>Bilbao</option>
-                        <option>Alicante</option>
-                        <option>Córdoba</option>
-                        <option>Valladolid</option>
-                        <option>Vigo</option>
-                        <option>Gijón</option>
-                        <option>Hospitalet de Llobregat</option>
-                        <option>A Coruña</option>
-                        <option>Vitoria-Gasteiz</option>
-                        <option>Granada</option>
-                        <option>Elche</option>
-                        <option>Oviedo</option>
-                        <option>Badalona</option>
-                        <option>Cartagena</option>
-                    </select>
-                    <div class="invalid-feedback">
-                        Seleccione una ciudad válida.
-                    </div>
+            </div>
+            <div class=" col-sm-3">
+                <label for="password" class="form-label">Confirma la Contraseña <span
+                        class="text-body-secondary">*</span></label>
+                <input type="password" class="form-control" id="password" placeholder="********">
+                <div class="invalid-feedback">
+                    Introduce una contraseña válida.
                 </div>
             </div>
+        </div>
 
-
-            <!-- Footer -->
-            <div class="container">
-                <footer class="py-3 my-4">
-                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicio</a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Rutas</a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Guardados</a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a>
-                        </li>
-                    </ul>
-                    <ul class=" list-unstyled  text-center">
-                        <li class=" d-inline-block"><a class="text-body-secondary"
-                                href="https://www.instagram.com/"><img src="../assets/icono_instagram.webp"
-                                    alt="instagram" width="50" height="50"></a></li>
-                        <li class="ms-3 d-inline-block"><a class="text-body-secondary"
-                                href="https://www.facebook.com/"><img src="../assets/icono_facebook.png" alt="facebook"
-                                    width="35" height="35"></a></li>
-                        <li class="ms-3 d-inline-block"><a class="text-body-secondary"
-                                href="https://www.twitter.com/"><img src="../assets/icono_twitter.png" alt="twitter"
-                                    width="35" height="35"></a></li>
-                    </ul>
-                    <div class="text-center text-body-secondary pb-3">
-                        <a href="politica-de-privacidad.html">Política de Privacidad</a>
-                    </div>
-                    <p class="text-center text-body-secondary">&copy; 2023 MapTrip</p>
-                </footer>
+        <div class="col-md-2 mt-3">
+            <label for="country" class="form-label">Vivo en:</label>
+            <select class="form-select" id="country" required>
+                <option value="">Selecciona una ciudad</option>
+                <option>España
+                <option>
+                <option>Francia
+                <option>
+                <option>Italia
+                <option>
+                <option>Portugal
+                <option>
+                <option>Reino Unido
+                <option>
+                <option>Estados Unidos
+                <option>
+                <option>Canadá
+                <option>
+                <option>México
+                <option>
+                <option>Argentina
+                <option>
+            </select>
+            <div class="invalid-feedback">
+                Seleccione una ciudad válida.
             </div>
+        </div>
+
+
+        <div class=" mt-3 form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Me gustaría recibir descuentos e información adicional
+                sobre MapTrip</label>
+        </div>
+
+        <div class=" mt-3 form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info"> Acepto los <a href="terminos-y-condiciones.html">
+                    terminos y condiciones<a> de MapTrip
+
+            </label>
+        </div>
+
+        <div class=" col-md-2 text-align text-center">
+            <button class="w-100 btn btn-primary btn-lg mt-3" type="submit">Registrarse</button>
+        </div>
+
+
+        <!-- Footer -->
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="../html/inicio.html"
+                            class="nav-link px-2 text-body-secondary">Inicio</a>
+                    </li>
+                    <li class="nav-item"><a href="../html/itinerario1.html"
+                            class="nav-link px-2 text-body-secondary">Rutas</a>
+                    </li>
+                    <li class="nav-item"><a href="../html/guardados.html"
+                            class="nav-link px-2 text-body-secondary">Guardados</a>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a>
+                    </li>
+                </ul>
+                <ul class=" list-unstyled  text-center">
+                    <li class="d-inline-block"><a class="text-body-secondary" href="https://www.instagram.com/"><img
+                                src="../assets/icono_instagram.webp" alt="instagram" width="50" height="50"></a>
+                    </li>
+                    <li class="ms-3 d-inline-block"><a class="text-body-secondary" href="https://www.facebook.com/"><img
+                                src="../assets/icono_facebook.png" alt="facebook" width="35" height="35"></a></li>
+                    <li class="ms-4 d-inline-block"><a class="text-body-secondary" href="https://www.twitter.com/"><img
+                                src="../assets/icono_twitter.png" alt="twitter" width="35" height="35"></a></li>
+                </ul>
+                <div class="text-center text-body-secondary pb-3">
+                    <a href="politica-de-privacidad.html">Política de Privacidad</a>
+                </div>
+                <p class="text-center text-body-secondary">&copy; 2023 MapTrip</p>
+            </footer>
+        </div>
 
 
 

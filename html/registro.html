@@ -4,156 +4,162 @@
     <title>Registro</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../assets/1.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
 </head>
 
-<body>
 
+<body style="background: linear-gradient(rgba(255, 230, 183, 0.7), rgba(44, 32, 18, 0.418)), url(../assets/15.jpg); background-repeat: no-repeat; background-size:cover;">
     <div class="container">
 
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4" src="../assets/1.png" alt="" width="72" height="57">
-            <h2>REGISTRO</h2>
-            <p class="lead">Si te gustaría disfrutar de todas las ventajas de MapTrip, regístrate aquí.</p>
+            <img class="d-block mx-auto img-fluid" src="../assets/LOGO.png" alt="" style="max-height: 200px;">
         </div>
-        <div class="row g-3">
-            <div class="col-sm-6">
-                <label for="firstName" class="form-label">Nombre<span class="text-body-secondary">*</span></label>
-                <input type="text" class="form-control" id="nombre" placeholder="Patricia" value="" required>
-                <div class="invalid-feedback">
-                    Introduce un nombre válido.
+
+
+        <div class="row justify-content-around">
+
+            <div id="inicioSesion" class=" col-lg-5 col-md-6 col-sm-12 bg-light p-4 rounded  mb-4"
+                style="background-color: rgba(94, 116, 88, 0.841) !important; border-radius: 20px !important;">
+
+                <div id="texto" style="padding-top: 120px;">
+                    <h2>INICIO DE SESIÓN </h2>
+                    <p class="lead">Si ya estás registrado, inicia sesión aquí.</p>
                 </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email <span class="text-body-secondary">*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="mi@correo.com">
+                    <label for="password" class="form-label mt-3">Contraseña <span
+                            class="text-body-secondary">*</span></label>
+                    <input type="password" class="form-control" id="password" placeholder="********">
+                </div>
+
+                <div class="form-group mt-3" style="font-size: 10px;">
+                    <p class="lead">¿Has olvidado tu contraseña? <a href="recuperar.html">Recupérala</a>.</p>
+                    <h4 class="lead">¿No tienes cuenta? <a href="registro.html">Regístrate</a>.</h4>
+                </div>
+
+                <div class="form-group">
+                    <a href="inicio.html" class="w-100 btn btn-primary btn-lg mt-3" type="submit">Iniciar</a>
+                </div>
+
             </div>
 
-            <div class="col-sm-6">
-                <label for="lastName" class="form-label">Apellido<span class="text-body-secondary">*</span></label>
-                <input type="text" class="form-control" id="apellido" placeholder="Mota" value="" required>
-                <div class="invalid-feedback">
-                    Introduce un apellido válido.
+
+            <div id="registro" class="col-lg-5 col-md-6 col-sm-12 bg-light p-4 rounded mb-4"
+                style="background-color: rgba(94, 116, 88, 0.841) !important; border-radius: 20px !important;">
+
+                <div id="texto">
+                    <h2>REGISTRO</h2>
+                    <p class="lead">Si te gustaría disfrutar de todas las ventajas de Mediterranean Route, regístrate aquí.</p>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="firstName" class="form-label">Nombre<span class="text-body-secondary">*</span></label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre" value="" required>
+
+                    <label for="lastName" class="form-label mt-3">Apellidos<span
+                            class="text-body-secondary">*</span></label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellidos" value="" required>
+
+                    <label for="email" class="form-label mt-3">Email <span class="text-body-secondary">*</span></label>
+                    <input type="email" class="form-control" id="email" placeholder="mi@correo.com">
+
+                    <label for="password" class="form-label mt-3">Contraseña <span
+                            class="text-body-secondary">*</span></label>
+                    <input type="password" class="form-control" id="password" placeholder="********">
+
+                    <label for="password" class="form-label mt-3">Confirma la Contraseña <span
+                            class="text-body-secondary">*</span></label>
+                    <input type="password" class="form-control" id="password" placeholder="********">
+
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" class="form-check-input mt-3" id="save-info">
+                    <label class="form-check-label mt-3" for="save-info" style="font-size: 12px;">Me gustaría recibir
+                        descuentos e información
+                        adicional
+                        sobre Mediterranean Route</label> </br>
+
+                    <input type="checkbox" class="form-check-input mt-3" id="save-info">
+                    <label class="form-check-label mt-3" for="save-info" style="font-size: 12px;"> Acepto los <a
+                            href="terminos-y-condiciones.html">
+                            terminos y condiciones<a> de Mediterranean Route</label>
+
+                    <a href="#" class="w-100 btn btn-primary btn-lg mt-3" data-bs-toggle="modal"
+                        data-bs-target="#registroModal">Registrarse</a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content" style="background-color: rgba(94, 116, 88, 0.874)">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="registroModalLabel">Su registro se ha realizado
+                                        correctamente!</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Bienvenido a Mediterranean Route. Para conocer más sobre Mediterranean Route, inicie sesión y que comience
+                                    la aventura.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="row g-3 mt-3">
-            <div class="col-sm-6">
-                <label for="email" class="form-label">Email <span class="text-body-secondary">*</span></label>
-                <input type="email" class="form-control" id="email" placeholder="mi@correo.com">
-                <div class="invalid-feedback">
-                    Introduce un email válido.
-                </div>
-            </div>
-            <div class=" col-sm-3">
-                <label for="password" class="form-label">Contraseña <span class="text-body-secondary">*</span></label>
-                <input type="password" class="form-control" id="password" placeholder="********">
-                <div class="invalid-feedback">
-                    Introduce una contraseña válida.
-                </div>
-            </div>
-            <div class=" col-sm-3">
-                <label for="password" class="form-label">Confirma la Contraseña <span
-                        class="text-body-secondary">*</span></label>
-                <input type="password" class="form-control" id="password" placeholder="********">
-                <div class="invalid-feedback">
-                    Introduce una contraseña válida.
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-2 mt-3">
-            <label for="country" class="form-label">Vivo en:</label>
-            <select class="form-select" id="country" required>
-                <option value="">Selecciona una ciudad</option>
-                <option>España
-                <option>
-                <option>Francia
-                <option>
-                <option>Italia
-                <option>
-                <option>Portugal
-                <option>
-                <option>Reino Unido
-                <option>
-                <option>Estados Unidos
-                <option>
-                <option>Canadá
-                <option>
-                <option>México
-                <option>
-                <option>Argentina
-                <option>
-            </select>
-            <div class="invalid-feedback">
-                Seleccione una ciudad válida.
-            </div>
-        </div>
-
-
-        <div class=" mt-3 form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info">Me gustaría recibir descuentos e información adicional
-                sobre MapTrip</label>
-        </div>
-
-        <div class=" mt-3 form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
-            <label class="form-check-label" for="save-info"> Acepto los <a href="terminos-y-condiciones.html">
-                    terminos y condiciones<a> de MapTrip
-
-            </label>
-        </div>
-
-        <div class=" col-md-2 text-align text-center">
-            <button class="w-100 btn btn-primary btn-lg mt-3" type="submit">Registrarse</button>
-        </div>
-
-
-        <!-- Footer -->
-        <div class="container">
-            <footer class="py-3 my-4">
-                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="../html/inicio.html"
-                            class="nav-link px-2 text-body-secondary">Inicio</a>
-                    </li>
-                    <li class="nav-item"><a href="../html/itinerario1.html"
-                            class="nav-link px-2 text-body-secondary">Rutas</a>
-                    </li>
-                    <li class="nav-item"><a href="../html/guardados.html"
-                            class="nav-link px-2 text-body-secondary">Guardados</a>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a>
-                    </li>
-                </ul>
-                <ul class=" list-unstyled  text-center">
-                    <li class="d-inline-block"><a class="text-body-secondary" href="https://www.instagram.com/"><img
-                                src="../assets/icono_instagram.webp" alt="instagram" width="50" height="50"></a>
-                    </li>
-                    <li class="ms-3 d-inline-block"><a class="text-body-secondary" href="https://www.facebook.com/"><img
-                                src="../assets/icono_facebook.png" alt="facebook" width="35" height="35"></a></li>
-                    <li class="ms-4 d-inline-block"><a class="text-body-secondary" href="https://www.twitter.com/"><img
-                                src="../assets/icono_twitter.png" alt="twitter" width="35" height="35"></a></li>
-                </ul>
-                <div class="text-center text-body-secondary pb-3">
-                    <a href="politica-de-privacidad.html">Política de Privacidad</a>
-                </div>
-                <p class="text-center text-body-secondary">&copy; 2023 MapTrip</p>
-            </footer>
-        </div>
-
-
-
-
-
+    </div>
 </body>
+
+<!-- Footer -->
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 "
+            style="background-color: rgba(33, 44, 42, 0.664); border-radius: 20px; padding-bottom : 0px !important;">
+            <li class="nav-item" style="margin-right: 20px;"><a href="../html/inicio.html"
+                    class="nav-link px-2 text-body-secondary">Inicio</a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;"><a href="../html/itinerario1.html"
+                    class="nav-link px-2 text-body-secondary">Rutas</a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;"><a href="../html/sesion.html"
+                    class="nav-link px-2 text-body-secondary">Guardados</a>
+            </li>
+            <li class="nav-item" style="margin-right: 20px;"><a href="#"
+                    class="nav-link px-2 text-body-secondary">Preguntas</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a>
+            </li>
+        </ul>
+        <ul class=" list-unstyled  text-center mt-3">
+            <li class="d-inline-block"><a class="text-body-secondary" href="https://www.instagram.com/"><img
+                        src="../assets/icono_instagram.webp" alt="instagram" width="50" height="50"></a>
+            </li>
+            <li class="ms-3 d-inline-block"><a class="text-body-secondary" href="https://www.facebook.com/"><img
+                        src="../assets/icono_facebook.png" alt="facebook" width="35" height="35"></a></li>
+            <li class="ms-4 d-inline-block"><a class="text-body-secondary" href="https://www.twitter.com/"><img
+                        src="../assets/icono_twitter.png" alt="twitter" width="35" height="35"></a></li>
+        </ul>
+        <div class="text-center text-body-secondary pb-3">
+            <a href="politica-de-privacidad.html">Política de Privacidad</a>
+        </div>
+        <p class="text-center text-body-secondary">&copy; 2023 Mediterranean Route</p>
+    </footer>
+</div>
 
 
 </html>

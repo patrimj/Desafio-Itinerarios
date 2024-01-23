@@ -1,0 +1,99 @@
+#inicioSesion {
+    color: aliceblue;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#registro {
+    color: aliceblue;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+#texto{
+    text-align: center;
+
+}
+.text-body-secondary {
+    color:aliceblue !important;
+}
+
+a {
+    color: aliceblue !important;
+}
+.menuBar {
+
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: rgb(0, 0, 0) !important;
+    transition: background-color 0.5s ease;
+}
+
+.menuBar:hover {
+    background-color: rgba(8, 0, 94, 0.72);
+    color: aliceblue !important;
+}
+
+body{
+    background-color: transparent !important;
+
+
+}
+
+#titulo-primario{
+    font-family: 'Titan One', sans-serif !important; font-size: 60px !important; color: rgb(36, 27, 135) !important;
+    text-align:center !important;
+
+}
+
+#titulo-secundario{
+    font-family: 'Titan One', sans-serif !important; font-size: 40px !important; color: rgb(211, 75, 75) !important;
+    text-align:center !important;
+}
+
+.lead{
+    font-size: 23px !important; 
+    text-align:center !important;
+}
+
+#ciudad {
+    display: inline;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.menu {
+    background-color: rgba(35, 23, 171, 0.411);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: aliceblue;
+}
+
+.seccion {
+    background-color: rgba(35, 23, 171, 0.667);
+    border-radius: 20px;
+    flex: 1 0 200px; /* Esto hará que las secciones tengan al menos 200px de ancho y crezcan para llenar el espacio disponible */
+    margin: 10px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    .seccion {
+        flex: 1 0 auto; /* Esto hará que las secciones tengan el ancho del contenedor en pantallas pequeñas */
+    }
+}

@@ -27,6 +27,7 @@
 a {
     color: aliceblue !important;
 }
+
 .menuBar {
 
     border-radius: 20px;
@@ -41,12 +42,6 @@ a {
 .menuBar:hover {
     background-color: rgba(8, 0, 94, 0.72);
     color: aliceblue !important;
-}
-
-body{
-    background-color: transparent !important;
-
-
 }
 
 #titulo-primario{
@@ -97,3 +92,13 @@ body{
         flex: 1 0 auto; /* Esto hará que las secciones tengan el ancho del contenedor en pantallas pequeñas */
     }
 }
+label{ color:grey;}
+input[type = "radio"]{ display:none;}
+label:hover{color:orange;}
+label:hover ~ label{color:orange;}
+
+.clasificacion{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+input[type = "radio"]:checked ~ label{color:orange;}

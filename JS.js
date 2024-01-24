@@ -1,4 +1,4 @@
-var ciudades = ["Alicante", "Almeria", "Badajoz", "Barcelona", "Bilbao", "Burgos", "Cadiz", "Cartagena", "Cordoba", "Granada", "Jerez de la frontera", "La Coruña", "Las palmas", "Leon", "Logroño", "Madrid", "Malaga", "Murcia", "Oviedo", "Pamplona", "Salamanca", "Sevilla", "Valencia", "Valladolid", "Madrid"];
+var ciudades = ["Alicante", "Almeria", "Badajoz", "Barcelona", "Bilbao", "Burgos", "Cadiz", "Cartagena", "Cordoba", "Granada", "Madrid","Sevilla", "Valencia", "Valladolid"];
 var index = 0;
 
 function cambiarCiudadYFondo() {

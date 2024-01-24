@@ -1,0 +1,10 @@
+label{ color:grey;}
+input[type = "radio"]{ display:none;}
+label:hover{color:orange;}
+label:hover ~ label{color:orange;}
+
+.clasificacion{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+input[type = "radio"]:checked ~ label{color:orange;} 

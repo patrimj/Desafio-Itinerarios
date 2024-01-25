@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<body style="background-color: aqua;">
+  <div class="container">
+    <form>
+      <div class="row">
+        <!-- Primera columna -->
+        <div class="col">
+          <div class="mb-3">
+            <label for="itineraryImage" class="form-label">Imagen del itinerario</label>
+            <input type="file" class="form-control" id="itineraryImage">
+          </div>
+          <div class="mb-3">
+            <label for="citySelect" class="form-label">Ciudad española</label>
+            <select class="form-select" id="citySelect">
+              <option selected>Selecciona una ciudad</option>
+              <option value="1">Alicante</option>
+              <option value="2">Altea</option>
+              <option value="3">Benidorm</option>
+              <!-- Agrega más ciudades aquí -->
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="itineraryDescription" class="form-label">Descripción del itinerario</label>
+            <textarea class="form-control" id="itineraryDescription" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Segunda columna -->
+        <div class="col">
+          <div class="mb-3">
+            <label for="routeName" class="form-label">Nombre de la ruta</label>
+            <input type="text" class="form-control" id="routeName">
+          </div>
+          <div class="mb-3">
+            <label for="routeDescription" class="form-label">Descripción de la ruta</label>
+            <textarea class="form-control" id="routeDescription" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="routeScore" class="form-label">Puntuación de la ruta</label>
+            <input type="number" class="form-control" id="routeScore" min="1" max="5">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card" style="background-color: #f8d7da; opacity: 0.7;">
+          <img src="ruta_a_tu_imagen.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Título de la tarjeta</h5>
+            <p class="card-text">Algún texto de ejemplo rápido para construir el cuerpo de la tarjeta.</p>
+            <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $(".card").hover(function () {
+        $(this).fadeTo("slow", 1);
+      }, function () {
+        $(this).fadeTo("slow", 0.7);
+      });
+    });
+  </script>
+
+</body>

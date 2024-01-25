@@ -60,3 +60,12 @@ setInterval(cambiarCiudadYFondo, 3000);
 document.getElementById('precio').oninput = function () {
     document.querySelector('label[for="precio"]').innerText = 'Max: ' + this.value + '€';
 }
+
+//JQuery: para que las tarjetas se vuelvan opacas al pasar el ratón por encima
+$(document).ready(function () {
+  $(".card").hover(function () {
+    $(this).fadeTo("slow", 1);
+  }, function () {
+    $(this).fadeTo("slow", 0.7);
+  });
+});

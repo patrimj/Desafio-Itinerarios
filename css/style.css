@@ -40,7 +40,7 @@ a {
 }
 
 .menuBar:hover {
-    background-color:#a48774;
+    background-color:#312783;
     color: aliceblue !important;
 }
 
@@ -54,6 +54,12 @@ a {
     font-family: 'Titan One', sans-serif !important; font-size: 40px !important; color: rgb(255, 255, 255) !important;
     text-align:center !important;
 }
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+
 
 .lead{
     font-size: 23px !important; 

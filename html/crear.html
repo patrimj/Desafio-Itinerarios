@@ -1,44 +1,205 @@
-<div class="container">
-    <form>
-        <div class="row">
-            <!-- Primera columna -->
-            <div class="col">
-                <div class="mb-3">
-                    <label for="itineraryImage" class="form-label">Imagen del itinerario</label>
-                    <input type="file" class="form-control" id="itineraryImage">
-                </div>
-                <div class="mb-3">
-                    <label for="citySelect" class="form-label">Ciudad española</label>
-                    <select class="form-select" id="citySelect">
-                        <option selected>Selecciona una ciudad</option>
-                        <option value="1">Alicante</option>
-                        <option value="2">Altea</option>
-                        <option value="3">Benidorm</option>
-                        <!-- Agrega más ciudades aquí -->
-                    </select>
-                </div>
-                <div class="mb-3">
-                    <label for="itineraryDescription" class="form-label">Descripción del itinerario</label>
-                    <textarea class="form-control" id="itineraryDescription" rows="3"></textarea>
-                </div>
+<html>
+
+<head>
+  <title>Mediterranean Route</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/png" href="../assets/1.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/perfil.css">
+
+  <!-- TIPOGRAFÍA GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+
+  <!-- JQUERY -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<!-- Body -->
+
+<body
+  style="
+    background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623)), url(../assets/españa.jpg); background-repeat: no-repeat; background-size:cover; ">
+
+  <div class="container">
+
+    <!-- Logo -->
+    <div class="py-5 text-center">
+      <a href="../html/inicio.html">
+        <img class="d-block mx-auto img-fluid" src="../assets/LOGO.png" alt="" style="max-height: 200px;">
+      </a>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="container">
+      <ul class="nav justify-content-around border-bottom pb-3 text-align-center"
+        style="background-color: #32278393; border-radius: 20px; padding-bottom : 0px !important; font-size: 22px !important;">
+
+        <li class="nav-item mx-md-5"><a id="menu" href="../html/inicio.html"
+            class="menuBar nav-link px-2 text-body-secondary">Inicio</a>
+        </li>
+        <li class="nav-item mx-md-5"><a href="../html/itinerarios.html"
+            class="menuBar nav-link px-2 text-body-secondary">Itinerarios</a>
+        </li>
+        <li class="nav-item mx-md-5"><a href="../html/crear.html"
+            class="menuBar nav-link px-2 text-body-secondary">Crear</a>
+        </li>
+
+        <li class="menuBar nav-item mx-md-5 mt-2"> <img src="../assets/lupa.png" alt="lupa" width="30" height="30">
+        </li>
+
+        <li class="menuBar nav-item mx-md-5 dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false"><img src="../assets/perfil.png" alt="usuario" width="35" height="35">
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="background-color: #32278363 !important;">
+            <li><a class="dropdown-item" href="../html/inicio.html" style="color: white !important;">Inicio</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="../html/guardados.html" style="color: white !important;">Perfil</a></li>
+            <li><a class="dropdown-item" href="../html/registro.html" style="color: white !important;">Cerrar Sesión</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <br><br><br><br>
+
+    <div class="container">
+
+      <div class="col-md-12 text-left">
+        <h1 id="titulo-primario" style="color: #312783 !important;">CREAR ITINERARIO</h1>
+        <br>
+        <h1 class="lead">En Mediterranean Route ofrecemos la posibilidad de crear tus propios itinerarios personalizados para que puedas compartirlo con otros usuarios. Para ello, deberas seguir los siguientes pasos:</h1>
+      
+        <h1 class="lead">1) Selecciona una ciudad española.<br>
+          2) Describe el itinerario.<br>
+          3) Añade rutas.<br>
+
+        <h2 id="titulo-secundario">¡Crea tu itinerario!</h2><br><br>
+
+    </div>
+
+      <div class="row">
+    
+        <div class="col-12 col-md-6 mt-4">
+          <h1 id="titulo-primario" class="text-white"> CIUDAD</h1>
+          <form id="formulario-actualizar">
+            <div class="form-group mt-3">
+              <label for="citySelect" class="form-label text-white">Ciudad española</label>
+              <select class="form-select" id="citySelect">
+                <option selected>Selecciona una ciudad</option>
+                <option value="1">Alicante</option>
+                <option value="2">Altea</option>
+                <option value="3">Benidorm</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="itineraryImage" class="form-label text-white">Imagen del itinerario</label>
+              <input type="file" class="form-control" id="itineraryImage">
+    
+              <div class="card mt-3">
+                <img src="../assets/ciudades/cuadradas/madrid.jpg" class="card-img-top" alt="Descripción de la imagen">
+              </div>
             </div>
 
-            <!-- Segunda columna -->
-            <div class="col">
-                <div class="mb-3">
-                    <label for="routeName" class="form-label">Nombre de la ruta</label>
-                    <input type="text" class="form-control" id="routeName">
-                </div>
-                <div class="mb-3">
-                    <label for="routeDescription" class="form-label">Descripción de la ruta</label>
-                    <textarea class="form-control" id="routeDescription" rows="3"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label for="routeScore" class="form-label">Puntuación de la ruta</label>
-                    <input type="number" class="form-control" id="routeScore" min="1" max="5">
-                </div>
+            <div class="form-group mt-3">
+              <label for="itineraryDescription" class="form-label text-white">Descripción del itinerario</label>
+              <textarea class="form-control" id="itineraryDescription" rows="3" placeholder="Madrid, la ciudad que late al ritmo de la pasión y la diversidad, te invita a sumergirte en una experiencia única llena de contrastes y emociones. Desde el amanecer hasta el anochecer, descubrirás una metrópoli que fusiona con maestría su rica herencia histórica con la vibrante energía de la vida contemporánea."></textarea>
             </div>
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
+    
+        <div class="col-12 col-md-6 mt-4">
+          <h1 id="titulo-primario" class="text-white"> RUTAS</h1>
+          <form id="formulario-actualizar">
+            <div class="form-group">
+              <label for="routeName" class="form-label text-white">Nombre de la ruta</label>
+              <input type="text" class="form-control" id="routeName" placeholder="Museos de Madrid">
+            </div>
+            <div class="form-group mt-3">
+              <label for="routeDescription" class="form-label text-white">Descripción de la ruta</label>
+              <textarea class="form-control" id="routeDescription" rows="3" placeholder="Comienza en el famoso Museo del Prado, hogar de obras maestras de artistas como Velázquez, Goya y El Bosco. Luego, dirígete al Museo Reina Sofía, dedicado al arte contemporáneo y conocido por albergar la famosa obra Guernica de Picasso. Finaliza tu recorrido en el Museo Thyssen-Bornemisza, que presenta una impresionante colección de pinturas que abarcan desde el Renacimiento hasta el arte contemporáneo."></textarea>
+            </div>
+            <div class="form-group mt-3">
+              <label for="routeScore" class="form-label text-white">Puntuación de la ruta</label>
+              <input type="number" class="form-control" id="routeScore" min="1" max="5" placeholder="5">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Añadir ruta</button>
+          </form>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary mt-3">Crear</button>
+    
+    </div>
+
+
+
+
+</body>
+
+<!-- Footer -->
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 "
+      style="background-color: rgba(33, 44, 42, 0.664); border-radius: 20px; padding-bottom : 0px !important;">
+      <li class="nav-item" style="margin-right: 20px;"><a href="../html/inicio.html"
+          class="nav-link px-2 text-body-secondary">Inicio</a>
+      </li>
+      <li class="nav-item" style="margin-right: 20px;"><a href="../html/itinerarios.html"
+          class="nav-link px-2 text-body-secondary">Rutas</a>
+      </li>
+
+      <li class="nav-item" style="margin-right: 20px;"><a href="#"
+          class="nav-link px-2 text-body-secondary">Preguntas</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a>
+      </li>
+    </ul>
+    <ul class=" list-unstyled  text-center mt-3">
+      <li class="d-inline-block"><a class="text-body-secondary" href="https://www.instagram.com/"><img
+            src="../assets/icono_instagram.webp" alt="instagram" width="50" height="50"></a>
+      </li>
+      <li class="ms-3 d-inline-block"><a class="text-body-secondary" href="https://www.facebook.com/"><img
+            src="../assets/icono_facebook.png" alt="facebook" width="35" height="35"></a></li>
+      <li class="ms-4 d-inline-block"><a class="text-body-secondary" href="https://www.twitter.com/"><img
+            src="../assets/icono_twitter.png" alt="twitter" width="35" height="35"></a></li>
+    </ul>
+    <div class="text-center text-body-secondary pb-3">
+      <a href="politica-de-privacidad.html">Política de Privacidad</a>
+    </div>
+    <p class="text-center text-body-secondary">&copy; 2023 Mediterranean Route</p>
+  </footer>
 </div>
+
+
+<script src="../JS.js"></script>
+<script>
+  $(document).ready(function () {
+    $(".card").hover(function () {
+      $(this).fadeTo("slow", 1);
+    }, function () {
+      $(this).fadeTo("slow", 0.6);
+    });
+  });
+</script>
+
+</html>

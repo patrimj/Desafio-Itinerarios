@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Inicio</title>
+    <title>Mediterranean Route</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
@@ -9,10 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../assets/1.png">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -39,25 +39,39 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
 
         <!-- Barra de navegación -->
         <div class="container">
-            <ul class="nav justify-content-around  border-bottom pb-3 text-align-center"
-                style="    background-color: #779AA1; border-radius: 20px; padding-bottom : 0px !important;   font-size: 22px !important;">
+            <ul class="nav justify-content-around border-bottom pb-3 text-align-center"
+                style="background-color: #32278393; border-radius: 20px; padding-bottom : 0px !important; font-size: 22px !important;">
 
                 <li class="nav-item mx-md-5"><a id="menu" href="../html/inicio.html"
-                        class=" menuBar nav-link px-2 text-body-secondary">Inicio</a>
+                        class="menuBar nav-link px-2 text-body-secondary">Inicio</a>
                 </li>
                 <li class="nav-item mx-md-5"><a href="../html/itinerarios.html"
-                        class=" menuBar nav-link px-2 text-body-secondary">Itinerarios</a>
+                        class="menuBar nav-link px-2 text-body-secondary">Itinerarios</a>
                 </li>
-                <li class="nav-item mx-md-5"><a href="../html/sesion.html"
-                        class=" menuBar nav-link px-2 text-body-secondary">Guardados</a>
+                <li class="nav-item mx-md-5"><a href="../html/crear.html"
+                        class="menuBar nav-link px-2 text-body-secondary">Crear</a>
                 </li>
 
-                <li class=" menuBar nav-item mx-md-5 mt-2"> <img src="../assets/lupa.png" alt="lupa" width="30"
+                <li class="menuBar nav-item mx-md-5 mt-2"> <img src="../assets/lupa.png" alt="lupa" width="30"
                         height="30"> </li>
-                <li class="menuBar nav-item mx-md-5 mt-2">
-                    <a href="../html/perfil.html">
-                        <img src="../assets/perfil.png" alt="usuario" width="35" height="35">
+
+                <li class="menuBar nav-item mx-md-5 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><img src="../assets/perfil.png" alt="usuario" width="35" height="35">
                     </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                        style="background-color: #32278363 !important;">
+                        <li><a class="dropdown-item" href="../html/inicio.html"
+                                style="color: white !important;">Inicio</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../html/guardados.html"
+                                style="color: white !important;">Perfil</a></li>
+                        <li><a class="dropdown-item" href="../html/registro.html"
+                                style="color: white !important;">Cerrar Sesión</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -93,10 +107,24 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                 <div class="mt-1 text-body-secondary">Puntuación: 3/5</div>
                             </div>
                             <div class="col-auto d-none d-lg-block">
-                                <img class="bd-placeholder-img" width="200" height="250" role="img"
+                                <img class="bd-placeholder-img img-fluid" width="200" height="250" role="img"
                                     aria-label="Placeholder: Thumbnail" src="../assets/alicante/castillo.jpeg"
                                     alt="Thumbnail">
                             </div>
+                        </div>
+                        <div class="card mb-4" style="background-color: #779AA1;">
+                            <div class="card-header"><strong>Comentarios</strong>
+
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: #9ec9d155;">
+                                    <strong>@arianagrande:</strong> El castillo es encantador.
+                                </li>
+                                <li class="list-group-item" style="background-color: #a6d5de8a;">
+                                    <strong>@lanarey:</strong> Me gustó mucho la visita, pero no me gustó que no hubiera
+                                    guías.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -105,7 +133,11 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                             <div class="col p-4 d-flex flex-column position-static">
                                 <strong class="d-inline-block mb-1 text-primary-emphasis">El Campello</strong>
                                 <h5 class="mb-2"> Ruta 2: Los baños de la reina</h5>
-                                <p class="card-text mb-auto" style="font-size: 12px; text-align: justify;"> El Campello también alberga un lugar de gran interés histórico y natural: los baños de la reina, unas antiguas piscifactorías romanas excavadas en la roca, donde según la leyenda, una bella reina mora se bañaba en privado. Los baños de la reina se encuentran en la Illeta dels Banyets, una península que antiguamente fue una isla</p>
+                                <p class="card-text mb-auto" style="font-size: 12px; text-align: justify;"> El Campello
+                                    también alberga un lugar de gran interés histórico y natural: los baños de la reina,
+                                    unas antiguas piscifactorías romanas excavadas en la roca, donde según la leyenda,
+                                    una bella reina mora se bañaba en privado. Los baños de la reina se encuentran en la
+                                    Illeta dels Banyets, una península que antiguamente fue una isla</p>
                                 <div class="mt-1 text-body-secondary">Puntuación: 5/5</div>
                             </div>
                             <div class="col-auto d-none d-lg-block">
@@ -113,6 +145,20 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                     aria-label="Placeholder: Thumbnail" src="../assets/alicante/torre.jpeg"
                                     alt="Thumbnail">
                             </div>
+
+                        </div>
+                        <div class="card mb-4" style="background-color: #779AA1;">
+                            <div class="card-header"><strong>Comentarios</strong>
+
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: #9ec9d155;">
+                                    <strong>@taylorswift:</strong> Campello es un lugar precioso para visitar.
+                                </li>
+                                <li class="list-group-item" style="background-color: #a6d5de8a;">
+                                    <strong>@oliviarod:</strong> Su playa es muy bonita y hacia un día muy bueno.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -135,6 +181,20 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                     alt="Thumbnail">
                             </div>
                         </div>
+                        <div class="card mb-4" style="background-color: #779AA1;">
+                            <div class="card-header"><strong>Comentarios</strong>
+
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: #9ec9d155;">
+                                    <strong>@kaleo:</strong> Calpe es precioso y su gente muy amable.
+                                </li>
+                                <li class="list-group-item" style="background-color: #a6d5de8a;">
+                                    <strong>@lorde:</strong> Ver el Peñon de Ifach es una experiencia única.
+
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <div
@@ -155,6 +215,22 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                     aria-label="Placeholder: Thumbnail" src="../assets/alicante/casco.jpeg"
                                     alt="Thumbnail">
                             </div>
+                        </div>
+                        <div class="card mb-4" style="background-color: #779AA1;">
+                            <div class="card-header"><strong>Comentarios</strong>
+
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item" style="background-color: #9ec9d155;">
+                                    <strong>@conangray:</strong> Altea es un lugar precioso y sus calles son muy
+                                    bonitas.
+                                </li>
+                                <li class="list-group-item" style="background-color: #a6d5de8a;">
+                                    <strong>@aurora:</strong> El casco antiguo es muy bonito y tiene unas vistas
+                                    especiales.
+
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -178,7 +254,7 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
             <li class="nav-item" style="margin-right: 20px;"><a href="../html/inicio.html"
                     class="nav-link px-2 text-body-secondary">Inicio</a>
             </li>
-            <li class="nav-item" style="margin-right: 20px;"><a href="../html/itinerario1.html"
+            <li class="nav-item" style="margin-right: 20px;"><a href="../html/itinerarios.html"
                     class="nav-link px-2 text-body-secondary">Rutas</a>
             </li>
 

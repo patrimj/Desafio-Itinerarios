@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Inicio</title>
+    <title>Mediterranean Route</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no">
 
@@ -9,10 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../assets/1.png">
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -25,7 +25,8 @@
 </head>
 
 
-<body     style="
+<body
+    style="
 background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623)), url(../assets/españa2.jpg); background-size:cover; ">
 
     <div class="container">
@@ -39,148 +40,82 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
 
         <!-- Barra de navegación -->
         <div class="container">
-            <ul class="nav justify-content-around  border-bottom pb-3 text-align-center"
-                style="    background-color: #f39201b8; border-radius: 20px; padding-bottom : 0px !important;   font-size: 22px !important;">
+            <ul class="nav justify-content-around border-bottom pb-3 text-align-center"
+                style="background-color: #32278393; border-radius: 20px; padding-bottom : 0px !important; font-size: 22px !important;">
 
                 <li class="nav-item mx-md-5"><a id="menu" href="../html/inicio.html"
-                        class=" menuBar nav-link px-2 text-body-secondary">Inicio</a>
+                        class="menuBar nav-link px-2 text-body-secondary">Inicio</a>
                 </li>
                 <li class="nav-item mx-md-5"><a href="../html/itinerarios.html"
-                        class=" menuBar nav-link px-2 text-body-secondary">Itinerarios</a>
+                        class="menuBar nav-link px-2 text-body-secondary">Itinerarios</a>
                 </li>
-                <li class="nav-item mx-md-5"><a href="../html/sesion.html"
-                        class=" menuBar nav-link px-2 text-body-secondary">Guardados</a>
+                <li class="nav-item mx-md-5"><a href="../html/crear.html"
+                        class="menuBar nav-link px-2 text-body-secondary">Crear</a>
                 </li>
 
-                <li class=" menuBar nav-item mx-md-5 mt-2"> <img src="../assets/lupa.png" alt="lupa" width="30"
+                <li class="menuBar nav-item mx-md-5 mt-2"> <img src="../assets/lupa.png" alt="lupa" width="30"
                         height="30"> </li>
-                <li class="menuBar nav-item mx-md-5 mt-2">
-                    <a href="../html/perfil.html">
-                        <img src="../assets/perfil.png" alt="usuario" width="35" height="35">
+
+                <li class="menuBar nav-item mx-md-5 dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><img src="../assets/perfil.png" alt="usuario" width="35" height="35">
                     </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"
+                        style="background-color: #32278363 !important;">
+                        <li><a class="dropdown-item" href="../html/inicio.html"
+                                style="color: white !important;">Inicio</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../html/guardados.html"
+                                style="color: white !important;">Perfil</a></li>
+                        <li><a class="dropdown-item" href="../html/registro.html"
+                                style="color: white !important;">Cerrar Sesión</a></li>
+                    </ul>
                 </li>
             </ul>
+        </div>
 
-
-            <section class="py-5 text-center container">
-                <div class="row py-lg-5">
-                    <div class=" mx-auto">
-                        <h1 id="titulo-primario" class="fw-light">Itinerarios de <br>Mediterranean Route </h1>
-                        <p class="lead text-body-secondary">En Mediterranean Route descubrirás los lugares más emocionantes para viajar en familia.<br> Explora ciudades llenas de historia, disfruta de la comida local, y vive la vibrante vida nocturna.</p>
-                        <a href="../html/crear.html" class="btn  my-2" style="background-color: #4C6557 !important;">Crear Itinerario</a>
-                        </p>
-                    </div>
+        <!--  Secciones de las ciudades -->
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class=" mx-auto">
+                    <h1 id="titulo-primario" class="fw-light">Itinerarios de <br>Mediterranean Route </h1>
+                    <p class="lead text-body-secondary">En Mediterranean Route descubrirás los lugares más emocionantes
+                        para viajar en familia.<br> Explora ciudades llenas de historia, disfruta de la comida local, y
+                        vive la vibrante vida nocturna.</p>
+                    <a href="../html/crear.html" class="btn  my-2" style="background-color: #4C6557 !important;">Crear
+                        Itinerario</a>
+                    </p>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
-            <div class="album py-5 bg-body-tertiary" style="background-color: #4c655766 !important;">
-                <div class="container">
+        <div class="album py-5 bg-body-tertiary" style="background-color: #4c655766 !important; border-radius: 15px;">
+            <div class="container">
 
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4c6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/alicante.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">ALICANTE</h2>
-                                    <p class="card-text" style="text-align: justify;"> Alicante es una ciudad encantadora que se encuentra en la costa mediterránea de España. Con su clima soleado y cálido, Alicante es un lugar perfecto para disfrutar de la playa todo el año. La ciudad está llena de hermosos jardines, plazas y monumentos históricos </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <a href="../html/itinerario1.html" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c !important; background-color: #eafff3;">Ver</a>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4c6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/alicante.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">ALICANTE</h2>
+                                <p class="card-text" style="text-align: justify;"> Alicante es una ciudad encantadora
+                                    que se encuentra en la costa mediterránea de España. Con su clima soleado y cálido,
+                                    Alicante es un lugar perfecto para disfrutar de la playa todo el año. La ciudad está
+                                    llena de hermosos jardines, plazas y monumentos históricos </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="../html/itinerario1.html" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c !important; background-color: #eafff3;">Ver</a>
 
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
-                                              --><label for="radio1">★</label><!--
-                                              --><input id="radio2" type="radio" name="estrellas" value="4" ><!--
-                                              --><label for="radio2">★</label><!--
-                                              --><input id="radio3" type="radio" name="estrellas" value="3" ><!--
-                                              --><label for="radio3">★</label><!--
-                                              --><input id="radio4" type="radio" name="estrellas" value="2" ><!--
-                                              --><label for="radio4">★</label><!--
-                                              --><input id="radio5" type="radio" name="estrellas" value="1" ><!--
-                                              --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/almeria.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">ALMERÍA</h2>
-                                    <p class="card-text" style="text-align: justify;"> Almería es una ciudad llena de historia y cultura. Con su impresionante castillo árabe y sus calles empedradas, Almería te transportará a la época medieval. Además, la ciudad es famosa por su vino, especialmente el Ojaén, que es uno de los más finos de España.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                              --><label for="radio1">★</label><!--
-                                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                              --><label for="radio2">★</label><!--
-                                              --><input id="radio3" type="radio" name="estrellas" value="3" checked><!--
-                                              --><label for="radio3">★</label><!--
-                                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                              --><label for="radio4">★</label><!--
-                                              --><input id="radio5" type="radio" name="estrellas" value="1" ><!--
-                                              --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/badajoz.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">BADAJOZ</h2>
-                                    <p class="card-text" style="text-align: justify;"> Badajoz es una ciudad con una rica historia y una mezcla única de culturas. Con su impresionante castillo de San Juan de los Reyes y su vibrantismo, Badajoz es un lugar que vale la pena visitar.<br> <br> <br> </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
-                                              --><label for="radio1">★</label><!--
-                                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
-                                              --><label for="radio2">★</label><!--
-                                              --><input id="radio3" type="radio" name="estrellas" value="3" checked><!--
-                                              --><label for="radio3">★</label><!--
-                                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
-                                              --><label for="radio4">★</label><!--
-                                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
-                                              --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/barcelona1.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">BARCELONA</h2>
-                                    <p class="card-text" style="text-align: justify;"> Barcelona es una ciudad llena de vida y energía. Con su famoso Parque Güell, el Museo Picasso y la Rambla, Barcelona tiene mucho que ofrecer. Además, la ciudad es famosa por su culinaria, especialmente los tapeo, que son pequeños platos compartidos.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                               --><label for="radio2">★</label><!--
@@ -190,26 +125,130 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/bilbao.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title" style="text-align: justify;">BILBAO</h2>
-                                    <p class="card-text" style="text-align: justify;"> Bilbao es una ciudad llena de encanto y belleza. Con su famoso Puente Colgante y su vibrante vida nocturna.<br><br><br><br></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/almeria.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">ALMERÍA</h2>
+                                <p class="card-text" style="text-align: justify;"> Almería es una ciudad llena de
+                                    historia y cultura. Con su impresionante castillo árabe y sus calles empedradas,
+                                    Almería te transportará a la época medieval. Además, la ciudad es famosa por su
+                                    vino, especialmente el Ojaén, que es uno de los más finos de España.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                              --><label for="radio1">★</label><!--
+                                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                                              --><label for="radio2">★</label><!--
+                                              --><input id="radio3" type="radio" name="estrellas" value="3" checked><!--
+                                              --><label for="radio3">★</label><!--
+                                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                                              --><label for="radio4">★</label><!--
+                                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                                              --><label for="radio5">★</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/badajoz.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">BADAJOZ</h2>
+                                <p class="card-text" style="text-align: justify;"> Badajoz es una ciudad con una rica
+                                    historia y una mezcla única de culturas. Con su impresionante castillo de San Juan
+                                    de los Reyes y su vibrantismo, Badajoz es un lugar que vale la pena visitar.<br>
+                                    <br> <br>
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                                              --><label for="radio1">★</label><!--
+                                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                                              --><label for="radio2">★</label><!--
+                                              --><input id="radio3" type="radio" name="estrellas" value="3" checked><!--
+                                              --><label for="radio3">★</label><!--
+                                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                                              --><label for="radio4">★</label><!--
+                                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                                              --><label for="radio5">★</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/barcelona1.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">BARCELONA</h2>
+                                <p class="card-text" style="text-align: justify;"> Barcelona es una ciudad llena de vida
+                                    y energía. Con su famoso Parque Güell, el Museo Picasso y la Rambla, Barcelona tiene
+                                    mucho que ofrecer. Además, la ciudad es famosa por su culinaria, especialmente los
+                                    tapeo, que son pequeños platos compartidos.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
+                                              --><label for="radio1">★</label><!--
+                                              --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                                              --><label for="radio2">★</label><!--
+                                              --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                                              --><label for="radio3">★</label><!--
+                                              --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                                              --><label for="radio4">★</label><!--
+                                              --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                                              --><label for="radio5">★</label>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/bilbao.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title" style="text-align: justify;">BILBAO</h2>
+                                <p class="card-text" style="text-align: justify;"> Bilbao es una ciudad llena de encanto
+                                    y belleza. Con su famoso Puente Colgante y su vibrante vida
+                                    nocturna.<br><br><br><br></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5"><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4" checked><!--
                                               --><label for="radio2">★</label><!--
@@ -219,26 +258,30 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/burgos1.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">BURGOS</h2>
-                                    <p class="card-text" style="text-align: justify;"> Burgos es una ciudad llena de historia y cultura. Con su famoso Catedral de Burgos y su vibrantismo.<br><br><br><br></p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/burgos1.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">BURGOS</h2>
+                                <p class="card-text" style="text-align: justify;"> Burgos es una ciudad llena de
+                                    historia y cultura. Con su famoso Catedral de Burgos y su
+                                    vibrantismo. Burgos tiene mucho que ofrecer. Además, la ciudad es famosa por su
+                                    vino, especialmente el Ojaén, que es uno de los más finos de España.</p> <br>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5"><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                               --><label for="radio2">★</label><!--
@@ -248,26 +291,29 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/cadiz.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">CÁDIZ</h2>
-                                    <p class="card-text" style="text-align: justify;"> Cádiz es una ciudad llena de encanto y belleza. Con su famoso Puente de Triana y su vibrante vida nocturna, Cádiz es un lugar que vale la pena visitar.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/cadiz.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">CÁDIZ</h2>
+                                <p class="card-text" style="text-align: justify;"> Cádiz es una ciudad llena de encanto
+                                    y belleza. Con su famoso Puente de Triana y su vibrante vida nocturna, Cádiz es un
+                                    lugar que vale la pena visitar.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                               --><label for="radio2">★</label><!--
@@ -277,26 +323,28 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/cordoba.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">CÓRDOBA</h2>
-                                    <p class="card-text" style="text-align: justify;"> Córdoba es una ciudad llena de historia y cultura. Con su famoso Mezquita-Catedral de Córdoba y su vibrantismo.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/cordoba.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">CÓRDOBA</h2>
+                                <p class="card-text" style="text-align: justify;"> Córdoba es una ciudad llena de
+                                    historia y cultura. Con su famoso Mezquita-Catedral de Córdoba y su vibrantismo.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5"><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4" checked><!--
                                               --><label for="radio2">★</label><!--
@@ -306,27 +354,29 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/granada.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">GRANADA</h2>
-                                    <p class="card-text" style="text-align: justify;" > Granada es una ciudad llena de encanto y belleza. Con su famoso Alhambra y su vibrante vida nocturna.</p>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/granada.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">GRANADA</h2>
+                                <p class="card-text" style="text-align: justify;"> Granada es una ciudad llena de
+                                    encanto y belleza. Con su famoso Alhambra y su vibrante vida nocturna.</p>
                                 </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                               --><label for="radio2">★</label><!--
@@ -336,26 +386,29 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/sevilla.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">SEVILLA</h2>
-                                    <p class="card-text" style="text-align: justify;"> Sevilla es una ciudad llena de encanto y belleza. Con su famoso Alcázar de Sevilla y su vibrante vida nocturna, Sevilla es un lugar que vale la pena visitar.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/sevilla.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">SEVILLA</h2>
+                                <p class="card-text" style="text-align: justify;"> Sevilla es una ciudad llena de
+                                    encanto y belleza. Con su famoso Alcázar de Sevilla y su vibrante vida nocturna,
+                                    Sevilla es un lugar que vale la pena visitar.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                               --><label for="radio2">★</label><!--
@@ -365,26 +418,28 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/valencia.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">VALENCIA</h2>
-                                    <p class="card-text" style="text-align: justify;"> Valencia es una ciudad llena de encanto y belleza. Con su famoso Mercado Central y su vibrante vida nocturna, Valencia es un lugar que vale la pena visitar. </p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/valencia.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">VALENCIA</h2>
+                                <p class="card-text" style="text-align: justify;"> Valencia es una ciudad llena de
+                                    encanto y belleza. Con su famoso Mercado Central y su vibrante vida nocturna. </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5" checked><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                               --><label for="radio2">★</label><!--
@@ -394,26 +449,29 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
-                                <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
-                                    src="../assets/ciudades/madrid.jpg" focusable="false"></img>
-                                <div class="card-body">
-                                    <h2 class="card-title">MADRID</h2>
-                                    <p class="card-text" style="text-align: justify;"> Madrid es una ciudad llena de vida y energía. Con su famoso Plaza Mayor y su vibrante vida nocturna, Madrid es un lugar que vale la pena visitar.</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary" style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
-                                        </div>
-                                        <form style="margin-right: 40px;">
-                                            <p class="clasificacion">
-                                                <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm" style="background-color: #4C6557; color:rgb(255, 243, 229);">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" role="img"
+                                src="../assets/ciudades/madrid.jpg" focusable="false"></img>
+                            <div class="card-body">
+                                <h2 class="card-title">MADRID</h2>
+                                <p class="card-text" style="text-align: justify;"> Madrid es una ciudad llena de vida y
+                                    energía. Con su famoso Plaza Mayor y su vibrante vida nocturna, Madrid es un lugar
+                                    que vale la pena visitar.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            style="color: #2d3d2c; background-color: #eafff3;">Ver</button>
+                                    </div>
+                                    <form style="margin-right: 40px;">
+                                        <p class="clasificacion">
+                                            <input id="radio1" type="radio" name="estrellas" value="5"><!--
                                               --><label for="radio1">★</label><!--
                                               --><input id="radio2" type="radio" name="estrellas" value="4"><!--
                                               --><label for="radio2">★</label><!--
@@ -423,17 +481,17 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
                                               --><label for="radio4">★</label><!--
                                               --><input id="radio5" type="radio" name="estrellas" value="1"><!--
                                               --><label for="radio5">★</label>
-                                            </p>
-                                        </form>
-                                    </div>
+                                        </p>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
 
@@ -451,7 +509,7 @@ background: linear-gradient(rgba(204, 232, 255, 0.674), rgba(18, 46, 33, 0.623))
             <li class="nav-item" style="margin-right: 20px;"><a href="../html/inicio.html"
                     class="nav-link px-2 text-body-secondary">Inicio</a>
             </li>
-            <li class="nav-item" style="margin-right: 20px;"><a href="../html/itinerario1.html"
+            <li class="nav-item" style="margin-right: 20px;"><a href="../html/itinerarios.html"
                     class="nav-link px-2 text-body-secondary">Rutas</a>
             </li>
 

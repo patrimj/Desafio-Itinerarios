@@ -1,0 +1,26 @@
+label {
+    color: grey;
+  
+    &:hover {
+      color: orange;
+  
+      ~ label {
+        color: orange;
+      }
+    }
+  }
+  
+  input[type="radio"] {
+    display: none;
+  
+    &:checked {
+      ~ label {
+        color: orange;
+      }
+    }
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }

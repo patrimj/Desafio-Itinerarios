@@ -1,0 +1,99 @@
+$color_1: aliceblue;
+$color_2: rgb(0, 0, 0);
+$color_3: #2c2373;
+$color_4: rgb(255, 255, 255);
+$color_5: #b13636;
+$font-family_1: 'Titan One', sans-serif;
+$background-color_1: #312783;
+$background-color_2: #2c23738c;
+$background-color_3: #2c2373db;
+
+#inicioSesion {
+	color: $color_1;
+	border-radius: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+#registro {
+	color: $color_1;
+	border-radius: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+#texto {
+	text-align: center;
+}
+.text-body-secondary {
+	color: $color_1 !important;
+}
+a {
+	color: $color_1 !important;
+}
+.menuBar {
+	border-radius: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+	color: $color_2 !important;
+	transition: background-color 0.5s ease;
+	&:hover {
+		background-color: $background-color_1;
+		color: $color_1 !important;
+	}
+}
+#titulo-primario {
+	font-family: $font-family_1 !important;
+	font-size: 60px !important;
+	color: $color_3 !important;
+	text-align: center !important;
+}
+#titulo-secundario {
+	font-family: $font-family_1 !important;
+	font-size: 40px !important;
+	color: $color_4 !important;
+	text-align: center !important;
+}
+.card {
+	&:hover {
+		transform: scale(1.05);
+		transition: transform .2s;
+	}
+}
+.lead {
+	font-size: 23px !important;
+	text-align: center !important;
+}
+#ciudad {
+	display: inline;
+	color: $color_5;
+	text-decoration: underline;
+}
+.menu {
+	background-color: $background-color_2;
+	border-radius: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+	color: $color_1;
+}
+.seccion {
+	background-color: $background-color_3;
+	border-radius: 20px;
+	flex: 1 0 200px;
+	margin: 10px;
+	padding: 10px;
+}
+@media (max-width: 600px) {
+	.menu {
+		flex-direction: column;
+	}
+	.seccion {
+		flex: 1 0 auto;
+	}
+}

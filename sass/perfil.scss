@@ -1,0 +1,12 @@
+$background-color_1: #432a1860;
+
+form {
+	background-color: $background-color_1;
+	padding: 30px;
+	border-radius: 15px;
+	border-right: 4px solid #F39200;
+	border-top: 4px solid #F39200;
+	border-bottom: 4px solid #F39200;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+}

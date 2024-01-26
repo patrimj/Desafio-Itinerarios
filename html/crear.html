@@ -1,4 +1,4 @@
-<html>
+<html lang="es">
 
 <head>
   <title>Mediterranean Route</title>
@@ -42,7 +42,7 @@
     <!-- Logo -->
     <div class="py-5 text-center">
       <a href="../html/inicio.html">
-        <img class="d-block mx-auto img-fluid" src="../assets/LOGO.png" alt="" style="max-height: 200px;">
+        <img class="d-block mx-auto img-fluid" src="../assets/LOGO.png" alt="logo" style="max-height: 200px;">
       </a>
     </div>
 
@@ -89,25 +89,26 @@
       <div class="col-md-12 text-left">
         <h1 id="titulo-primario" style="color: #312783 !important;">CREAR ITINERARIO</h1>
         <br>
-        <h1 class="lead">En Mediterranean Route ofrecemos la posibilidad de crear tus propios itinerarios personalizados para que puedas compartirlo con otros usuarios. Para ello, deberas seguir los siguientes pasos:</h1>
-      
+        <h1 class="lead">En Mediterranean Route ofrecemos la posibilidad de crear tus propios itinerarios personalizados
+          para que puedas compartirlo con otros usuarios. Para ello, deberas seguir los siguientes pasos:</h1>
+
         <h1 class="lead">1) Selecciona una ciudad española.<br>
           2) Describe el itinerario.<br>
           3) Añade rutas.<br>
 
-        <h2 id="titulo-secundario">¡Crea tu itinerario!</h2><br><br>
+          <h2 id="titulo-secundario">¡Crea tu itinerario!</h2><br><br>
 
-    </div>
+      </div>
 
       <div class="row">
-    
+
         <div class="col-12 col-md-6 mt-4">
           <br><br><br><br>
           <h1 id="titulo-primario" class="text-white"> CIUDAD</h1>
           <form id="formulario-actualizar">
             <div class="form-group mt-3">
-              <label for="citySelect" class="form-label text-white">Ciudad española</label>
-              <select class="form-select" id="citySelect">
+              <label for="seleccionarciu" class="form-label text-white">Ciudad española</label>
+              <select class="form-select" id="seleccionarciu">
                 <option selected>Selecciona una ciudad</option>
                 <option value="1">Alicante</option>
                 <option value="2">Altea</option>
@@ -115,71 +116,81 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="itineraryImage" class="form-label text-white">Imagen del itinerario</label>
-              <input type="file" class="form-control" id="itineraryImage">
-    
+              <label for="img" class="form-label text-white">Imagen del itinerario</label>
+              <input type="file" class="form-control" id="img">
+
               <div class="card mt-3">
-                <img src="../assets/ciudades/cuadradas/madrid.jpg" class="card-img-top" alt="Descripción de la imagen">
+                <img src="../assets/ciudades/cuadradas/madrid.jpg" class="card-img-top" alt="mad">
               </div>
             </div>
 
             <div class="form-group mt-3">
-              <label for="itineraryDescription" class="form-label text-white">Descripción del itinerario</label>
-              <textarea class="form-control" id="itineraryDescription" rows="3" placeholder="Madrid, la ciudad que late al ritmo de la pasión y la diversidad, te invita a sumergirte en una experiencia única llena de contrastes y emociones. Desde el amanecer hasta el anochecer, descubrirás una metrópoli que fusiona con maestría su rica herencia histórica con la vibrante energía de la vida contemporánea."></textarea>
+              <label for="desci" class="form-label text-white">Descripción del itinerario</label>
+              <textarea class="form-control" id="desci" rows="3"
+                placeholder="Madrid, la ciudad que late al ritmo de la pasión y la diversidad, te invita a sumergirte en una experiencia única llena de contrastes y emociones. Desde el amanecer hasta el anochecer, descubrirás una metrópoli que fusiona con maestría su rica herencia histórica con la vibrante energía de la vida contemporánea."></textarea>
             </div>
           </form>
         </div>
 
-    
+
         <div class="col-12 col-md-6 mt-4">
-          
+
           <h1 id="titulo-primario" class="text-white"> RUTAS</h1>
           <form id="formulario-actualizar">
             <div class="form-group">
-              <label for="routeName" class="form-label text-white">Nombre de la ruta</label>
-              <input type="text" class="form-control" id="routeName" placeholder="Museos de Madrid">
+              <label for="nombreruta" class="form-label text-white">Nombre de la ruta</label>
+              <input type="text" class="form-control" id="nombreruta" placeholder="Museos de Madrid">
             </div>
             <div class="form-group">
-              <label for="itineraryImage" class="form-label text-white">Imagen de la ruta</label>
-              <input type="file" class="form-control" id="itineraryImage">
-    
+              <label for="imagen" class="form-label text-white">Imagen de la ruta</label>
+              <input type="file" class="form-control" id="imagen">
+
               <div class="card mt-3">
-                <img src="../assets/ciudades/cuadradas/madrid.jpg" class="card-img-top" alt="Descripción de la imagen">
+                <img src="../assets/ciudades/cuadradas/madrid.jpg" class="card-img-top" alt="madrid">
               </div>
             </div>
             <div class="form-group mt-3">
-              <label for="routeDescription" class="form-label text-white">Descripción de la ruta</label>
-              <textarea class="form-control" id="routeDescription" rows="3" placeholder="Comienza en el famoso Museo del Prado, hogar de obras maestras de artistas como Velázquez, Goya y El Bosco. Luego, dirígete al Museo Reina Sofía, dedicado al arte contemporáneo y conocido por albergar la famosa obra Guernica de Picasso. Finaliza tu recorrido en el Museo Thyssen-Bornemisza, que presenta una impresionante colección de pinturas que abarcan desde el Renacimiento hasta el arte contemporáneo."></textarea>
+              <label for="descruta" class="form-label text-white">Descripción de la ruta</label>
+              <textarea class="form-control" id="descruta" rows="3"
+                placeholder="Comienza en el famoso Museo del Prado, hogar de obras maestras de artistas como Velázquez, Goya y El Bosco. Luego, dirígete al Museo Reina Sofía, dedicado al arte contemporáneo y conocido por albergar la famosa obra Guernica de Picasso. Finaliza tu recorrido en el Museo Thyssen-Bornemisza, que presenta una impresionante colección de pinturas que abarcan desde el Renacimiento hasta el arte contemporáneo."></textarea>
             </div>
             <div class="form-group mt-3">
-              <label for="routeScore" class="form-label text-white">Puntuación de la ruta</label>
-              <input type="number" class="form-control" id="routeScore" min="1" max="5" placeholder="5">
+              <label for="puntuacionru" class="form-label text-white">Puntuación de la ruta</label>
+              <input type="number" class="form-control" id="puntuacionru" min="1" max="5" placeholder="5">
             </div>
 
-            <a href="#" class="w-100 btn btn- btn-lg mt-3" data-bs-toggle="modal"
-            data-bs-target="#registroModal" style="background-color:#F39201 !important;">Añadir ruta</a>
+            <a href="#" class="w-100 btn btn- btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#registroModal"
+              style="background-color:#F39201 !important;">Añadir ruta</a>
 
           </form>
-                  <!-- Modal -->
-        <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content" style="background-color: #F39201">
+          <!-- Modal -->
+          <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content" style="background-color: #F39201">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="registroModalLabel">Ruta añadida con exito!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                  <h5 class="modal-title" id="registroModalLabel">Ruta añadida con exito!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                Si deseas añadir otra ruta, pulsa en el botón <strong>"Añadir ruta"</strong>. Si deseas finalizar el itinerario, pulsa en el botón <strong>"Crear itinerario"</strong>.
+                  Si deseas añadir otra ruta, pulsa en el botón <strong>"Añadir ruta"</strong>. Si deseas finalizar el
+                  itinerario, pulsa en el botón <strong>"Crear itinerario"</strong>.
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
         </div>
       </div>
-      <button type="submit" class="btn  mt-3" style="background-color:#F39201 !important;">Crear itinerario</button>
-    
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <a href="../html/itinerarios.html" class="btn btn-success">Crear itinerario</a>
+          <a href="../html/itinerarios.html" class="btn btn-primary">Volver a
+            itinerarios</a>
+        </div>
+      </div>
     </div>
 
 

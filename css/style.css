@@ -84,7 +84,7 @@ a {
 .seccion {
     background-color: #2c2373db;
     border-radius: 20px;
-    flex: 1 0 200px; /* Esto hará que las secciones tengan al menos 200px de ancho y crezcan para llenar el espacio disponible */
+    flex: 1 0 200px; 
     margin: 10px;
     padding: 10px;
 }

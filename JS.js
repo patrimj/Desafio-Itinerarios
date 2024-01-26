@@ -1,4 +1,4 @@
-var ciudades = ["Alicante", "Almeria", "Badajoz", "Barcelona", "Bilbao", "Burgos", "Cadiz", "Cartagena", "Cordoba", "Granada", "Madrid","Sevilla", "Valencia", "Valladolid"];
+var ciudades = ["Alicante", "Almeria", "Badajoz", "Barcelona", "Bilbao", "Burgos", "Cadiz", "Cordoba", "Granada", "Madrid","Sevilla", "Valencia"];
 var index = 0;
 
 function cambiarCiudadYFondo() {
@@ -26,9 +26,6 @@ function cambiarCiudadYFondo() {
     if (ciudad == "Cadiz") {
         imagen = "url(../assets/ciudades/cadiz.jpg)";
     }
-    if (ciudad == "Cartagena") {
-        imagen = "url(../assets/ciudades/cartagena.jpg)";
-    }
     if (ciudad == "Cordoba") {
         imagen = "url(../assets/ciudades/cordoba.jpg)";
     }
@@ -40,9 +37,6 @@ function cambiarCiudadYFondo() {
     }
     if (ciudad == "Valencia") {
         imagen = "url(../assets/ciudades/valencia.jpg)";
-    }
-    if (ciudad == "Valladolid") {
-        imagen = "url(../assets/ciudades/valladolid.jpg)";
     }
     if (ciudad == "Madrid") {
         imagen = "url(../assets/ciudades/madrid.jpg)";
